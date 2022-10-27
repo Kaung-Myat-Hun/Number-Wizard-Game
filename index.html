@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Wizard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="margin: 20px">Welcome To My Number Wizard Game</h2>
+      <p
+        style="
+          justify-content: center;
+          text-align: center;
+          color: aqua;
+          line-height: 30px;
+          margin-top: 20px;
+        ">
+        Welcome from My Number Wizard Game <br />
+        Rules <br />
+        1.Please take a number between 1 and 1000 and don't tell me this number
+      </p>
+      <div class="answer-container">
+        <h1 class="answer">My Guess Number is....</h1>
+        <h1 class="answer" id="answerNumber">?</h1>
+      </div>
+      <button class="button start" onclick="startHandler()">Start</button>
+      <div class="">
+        <button class="button high" >Too High</button>
+        <button class="button correct">Correct</button>
+        <button class="button low" ">Too Low</button>
+      </div>
+      <div class="info_icon" onclick="ruleHandler()">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 5px" viewBox="0 0 192 512">
+          <path
+            fill="#fff"
+            d="M144 80c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z" />
+        </svg>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
